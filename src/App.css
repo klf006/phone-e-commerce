@@ -8,6 +8,20 @@
 
 body {
   font-family: 'Oswald', sans-serif !important;
+  background: var(--mainGrey) !important;
+  color:var(--mainDark)!important;
+}
+
+.text-title{
   font-family: 'Orbitron', sans-serif;
-background: var(--mainGrey) !important;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue{
+  color: var(--mainBlue);
+}
+
+.text-bright{
+  color: var(--lightBlue);
 }
