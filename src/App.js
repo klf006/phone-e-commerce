@@ -1,20 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './Components/Navbar';
 
 function App() {
   return (
-    <div className='container'>
-      <div className='row'>
-        <div className='col-6'>column number one</div>
-        <div className='col-6'>
-          <span>
-            <i className = 'fas fa-home' />
-          </span>
-        </div>
-      </div>
-    </div>
+    <React.Fragment>
+      <NavBar />
+      <h1>hello from app</h1>
+    </React.Fragment>
   );
 }
 
