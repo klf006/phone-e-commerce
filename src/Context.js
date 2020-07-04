@@ -22,7 +22,7 @@ class ProductProvider extends Component {
       tempProducts = [...tempProducts, singleItem];
     });
     this.setState(() =>{
-      return {products:tempProducts}
+      return { products: tempProducts }
     });
   };
 
@@ -31,12 +31,16 @@ class ProductProvider extends Component {
     return product;
   }
 
-  handleDetail = () =>{
-    console.log('hello from detail');
+  handleDetail = (id) =>{
+    const product = this.getItem(id);
+    this.setState(() =>{
+      return { detailProduct: product }
+    })
   };
   
   addToCart = id =>{
-    console.log(`hello from add to cart.id is ${id}`);
+    let tempProducts = [...this.state.products];
+    
   };
 
   render() {
