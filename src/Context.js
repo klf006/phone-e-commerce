@@ -52,9 +52,11 @@ class ProductProvider extends Component {
         products: tempProducts, 
         cart: [...this.state.cart, product]
       };
-    },() =>{
+    },
+      () =>{
       console.log(this.state);
-    });
+      }
+    );
   };
 
   render() {
